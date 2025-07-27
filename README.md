@@ -1,36 +1,195 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amirreza Tavassoli - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js showcasing my development skills and projects.
 
-First, run the development server:
+## 🌐 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**[Visit Portfolio →](https://amir-portfolio-zeta.vercel.app/)**
+
+## 📸 Screenshots
+
+![Portfolio Preview](![alt text](image.png))
+
+## ✨ Features
+
+- **Responsive Design** - Works perfectly on all devices
+- **Modern UI/UX** - Clean, professional design with smooth animations
+- **Fast Performance** - Built with Next.js for optimal loading speeds
+- **SEO Optimized** - Meta tags and structured data for better search visibility
+- **Interactive Portfolio** - Live demos of all projects
+- **Contact Form** - Functional contact form for inquiries
+- **Modular Components** - Clean, maintainable code architecture
+
+## 🛠️ Built With
+
+- **Framework:** [Next.js 15](https://nextjs.org/)
+- **Styling:** [Bootstrap 5](https://getbootstrap.com/) + Custom CSS
+- **Icons:** [Font Awesome](https://fontawesome.com/) + [React Icons](https://react-icons.github.io/react-icons/)
+- **Fonts:** [Google Fonts](https://fonts.google.com/) (Poppins, Lora)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+## 🎯 Projects Showcased
+
+1. **[GitHub Finder](https://github-finder-kappa-virid.vercel.app/)**
+
+   - React application with GitHub API integration
+   - Technologies: React, Tailwind CSS, GitHub API
+
+2. **[MovieMate](https://movie-mate-brown.vercel.app/)**
+
+   - Movie discovery app with search functionality
+   - Technologies: React, CSS Modules, Movie API
+
+3. **[Personal Portfolio](https://amirtavassoli.ir)**
+
+   - This very website you're looking at
+   - Technologies: Vanilla JavaScript, CSS3, HTML5
+
+4. **[Arman Portfolio](https://arman-portfolio-alpha.vercel.app/)**
+   - Professional portfolio with modern animations
+   - Technologies: React, Next.js, Tailwind CSS, Framer Motion
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/your-portfolio-repo.git
+   cd your-portfolio-repo
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Install React Icons** (if not already installed)
+
+   ```bash
+   npm install react-icons
+   ```
+
+4. **Run the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+├── components/
+│   ├── About.js
+│   ├── Contact.js
+│   ├── Header.js
+│   ├── Portfolio.js
+│   ├── Skills.js
+│   └── portfolio/
+│       ├── PortfolioHeader.js
+│       ├── ProjectCard.js
+│       ├── ProjectGrid.js
+│       └── PortfolioCallToAction.js
+├── data/
+│   └── projectsData.js
+├── public/
+│   ├── images/
+│   └── css/
+├── src/app/
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Adding New Projects
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Add your project data to `data/projectsData.js`:
 
-## Learn More
+   ```javascript
+   {
+     id: 5,
+     title: "Your Project Name",
+     description: "Project description...",
+     image: "/images/your-project.png",
+     liveUrl: "https://your-project-url.com",
+     technologies: ["React", "Node.js", "MongoDB"],
+     features: ["Feature 1", "Feature 2", "Feature 3"]
+   }
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Add project screenshot to `public/images/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Updating Personal Information
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Edit `components/About.js` for bio information
+- Update `components/Skills.js` for skills and technologies
+- Modify `components/Contact.js` for contact details
 
-## Deploy on Vercel
+### Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Global styles: `src/app/globals.css`
+- Component-specific styles: Inline styles in components
+- Bootstrap classes for responsive design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsive Breakpoints
+
+- **Desktop:** 4 projects per row (xl)
+- **Laptop:** 3 projects per row (lg)
+- **Tablet:** 2 projects per row (md)
+- **Mobile:** 1 project per row (sm)
+
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+1. **Connect your GitHub repository to Vercel**
+2. **Import your project**
+3. **Deploy automatically** - Vercel will detect Next.js and configure everything
+
+### Manual Deployment
+
+```bash
+# Build the project
+npm run build
+
+# Start production server
+npm run start
+```
+
+## 📧 Contact
+
+- **Email:** amirtavass62@gmail.com
+- **Website:** [amirtavassoli.ir](https://amirtavassoli.ir)
+- **GitHub:** [amirtavass]
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) for the amazing framework
+- [Bootstrap](https://getbootstrap.com/) for responsive utilities
+- [Font Awesome](https://fontawesome.com/) for beautiful icons
+- [Vercel](https://vercel.com/) for seamless deployment
+
+---
+
+**⭐ If you found this portfolio helpful, please give it a star!**
