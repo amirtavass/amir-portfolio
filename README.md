@@ -1,6 +1,6 @@
 # Amirreza Tavassoli - Portfolio Website
 
-A modern, responsive portfolio website built with Next.js showcasing my development skills and projects.
+A modern, responsive portfolio website built with Next.js showcasing my development skills and projects as a Software Engineering Master's student and front-end developer.
 
 ## 🌐 Live Demo
 
@@ -23,31 +23,36 @@ A modern, responsive portfolio website built with Next.js showcasing my developm
 ## 🛠️ Built With
 
 - **Framework:** [Next.js 15](https://nextjs.org/)
-- **Styling:** [Bootstrap 5](https://getbootstrap.com/) + Custom CSS
+- **Languages:** JavaScript, TypeScript
+- **State Management:** Redux
+- **Styling:** [Bootstrap 5](https://getbootstrap.com/), [Tailwind CSS](https://tailwindcss.com/), CSS Modules
+- **Routing:** React Router with Data Loading
 - **Icons:** [Font Awesome](https://fontawesome.com/) + [React Icons](https://react-icons.github.io/react-icons/)
 - **Fonts:** [Google Fonts](https://fonts.google.com/) (Poppins, Lora)
 - **Deployment:** [Vercel](https://vercel.com/)
 
 ## 🎯 Projects Showcased
 
-1. **[GitHub Finder](https://github-finder-kappa-virid.vercel.app/)**
+1. **[Violet Project](https://amirtavassoli.ir)**
 
-   - React application with GitHub API integration
-   - Technologies: React, Tailwind CSS, GitHub API
-
-2. **[MovieMate](https://movie-mate-brown.vercel.app/)**
-
-   - Movie discovery app with search functionality
-   - Technologies: React, CSS Modules, Movie API
-
-3. **[Personal Portfolio](https://amirtavassoli.ir)**
-
-   - This very website you're looking at
+   - Personal portfolio website with admin panel
    - Technologies: Vanilla JavaScript, CSS3, HTML5
 
-4. **[Arman Portfolio](https://arman-portfolio-alpha.vercel.app/)**
-   - Professional portfolio with modern animations
-   - Technologies: React, Next.js, Tailwind CSS, Framer Motion
+2. **[Pars Swim](https://parsswim.ir)**
+
+   - Professional portfolio for swimming coaches with modern animations
+   - Technologies: Next.js, React Query, Tailwind CSS, Framer Motion
+
+3. **[Fast React Pizza](https://fast-react-pizza-aq7w.vercel.app/)**
+
+   - Streamlined pizza ordering app with no sign-up required
+   - Remote state management with Redux, React Router data loading
+   - Technologies: React, Redux, React Router v6.4+, Tailwind CSS
+
+4. **[MovieMate](https://movie-mate-brown.vercel.app/)**
+   - Movie discovery app with search and watched list features
+   - Originally JavaScript, currently migrating to TypeScript
+   - Technologies: React, TypeScript, CSS Modules
 
 ## 🚀 Getting Started
 
@@ -177,7 +182,9 @@ npm run start
 
 - **Email:** amirtavass62@gmail.com
 - **Website:** [amirtavassoli.ir](https://amirtavassoli.ir)
-- **GitHub:** [amirtavass]
+- **GitHub:** [amirtavass](https://github.com/amirtavass)
+- **Location:** Bolton, UK
+- **Status:** Master's Student in Software Engineering
 
 ## 📄 License
 
