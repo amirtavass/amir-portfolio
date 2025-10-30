@@ -7,8 +7,8 @@ export default function PortfolioHeader() {
       <hr className="w-25 mx-auto" />
       <h2 className="mb-4">Check Out My Work</h2>
       <p className="lead">
-        Here are my key projects showcasing my development skills with live
-        demos.
+        A comprehensive showcase of my development projects across different
+        technologies and approaches.
       </p>
     </div>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="col-xl-3 col-lg-4 col-md-6 mb-4 d-flex">
+    <div className="col-lg-5 col-md-6 mb-4 d-flex">
       <div className="project-card w-100 shadow-lg rounded-4 overflow-hidden bg-white d-flex flex-column">
         {/* Project Image */}
         <div className="project-image-container position-relative">
@@ -18,15 +18,26 @@ export default function ProjectCard({ project }) {
             }}
           />
           <div className="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0">
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-light btn-lg rounded-pill px-4"
-            >
-              <i className="fas fa-external-link-alt me-2"></i>
-              Live Demo
-            </a>
+            <div className="d-flex gap-2">
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-light btn-sm rounded-pill px-3"
+              >
+                <i className="fas fa-external-link-alt me-2"></i>
+                Live Demo
+              </a>
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline-light btn-sm rounded-pill px-3"
+              >
+                <i className="fab fa-github me-2"></i>
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
 
@@ -64,16 +75,25 @@ export default function ProjectCard({ project }) {
             </ul>
           </div>
 
-          {/* Action Button */}
-          <div className="mt-auto">
+          {/* Action Buttons */}
+          <div className="mt-auto d-flex gap-2">
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary w-100"
+              className="btn btn-primary flex-fill"
             >
               <i className="fas fa-external-link-alt me-2"></i>
-              View Live Demo
+              Live Demo
+            </a>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-primary flex-fill"
+            >
+              <i className="fab fa-github me-2"></i>
+              GitHub
             </a>
           </div>
         </div>

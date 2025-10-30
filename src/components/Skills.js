@@ -1,14 +1,9 @@
 "use client";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaBootstrap,
-  FaGitAlt,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiTypescript, SiRedux } from "react-icons/si";
 
 export default function Skills() {
   return (
@@ -103,21 +98,21 @@ export default function Skills() {
 
               <div className="col-6">
                 <div className="skill-item p-3 border rounded text-center h-100 bg-white">
-                  <FaBootstrap
-                    style={{ color: "#7952b3" }}
-                    className="mb-2"
-                    size={40}
-                  />
-                  <h6 className="mb-0">Bootstrap</h6>
-                  <small className="text-muted">UI Framework</small>
+                  <SiTypescript className="text-primary mb-2" size={40} />
+                  <h6 className="mb-0">TypeScript</h6>
+                  <small className="text-muted">Type-Safe JavaScript</small>
                 </div>
               </div>
 
               <div className="col-6">
                 <div className="skill-item p-3 border rounded text-center h-100 bg-white">
-                  <FaGitAlt className="text-danger mb-2" size={40} />
-                  <h6 className="mb-0">Git</h6>
-                  <small className="text-muted">Version Control</small>
+                  <SiRedux
+                    className="text-purple mb-2"
+                    style={{ color: "#764abc" }}
+                    size={40}
+                  />
+                  <h6 className="mb-0">Redux</h6>
+                  <small className="text-muted">State Management</small>
                 </div>
               </div>
 
@@ -134,13 +129,8 @@ export default function Skills() {
         <div className="row mt-5 text-center">
           <div className="col-12">
             <a
-              href="#contact"
-              className="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
-            >
-              Contact Me
-            </a>
-            <a
-              href="#"
+              href="/cv.pdf"
+              download="Amirreza_Tavassoli_CV.pdf"
               className="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
             >
               Download CV

@@ -47,16 +47,10 @@ export default function Header() {
           </div>
         </a>
         <div className="social d-flex gap-3 position-absolute">
-          <a href="#">
-            <i className="fab fa-twitter fa-3x text-white"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-instagram fa-3x text-white"></i>
-          </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/amir-tavassoli-8b3163218/">
             <i className="fab fa-linkedin fa-3x text-white"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/amirtavass">
             <i className="fab fa-github fa-3x text-white"></i>
           </a>
         </div>

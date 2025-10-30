@@ -13,7 +13,11 @@ export default function PortfolioCallToAction() {
           <i className="fas fa-envelope me-2"></i>
           Get In Touch
         </a>
-        <a href="#" className="btn btn-outline-primary btn-lg px-4">
+        <a
+          href="/cv.pdf"
+          download="Amirreza_Tavassoli_CV.pdf"
+          className="btn btn-outline-primary btn-lg px-4"
+        >
           <i className="fas fa-download me-2"></i>
           Download CV
         </a>

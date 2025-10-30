@@ -20,21 +20,27 @@ export default function About() {
           />
 
           <p className="lead">
-            I&apos;m a self-taught front-end developer from Shiraz, IRAN, with a
-            strong focus on building interactive and scalable web applications.
-            My coding journey began three years ago with Java, and over time, I
-            transitioned into web technologies like HTML, CSS, and
-            JavaScript—where I discovered my passion for creating intuitive user
-            experiences. These days, I specialize in React and Next.js, using
-            component-based architecture to build modern, responsive interfaces.
-            I&apos;ve worked with tools like React Router, Context API, and
-            Tailwind CSS, and I enjoy integrating external APIs, managing global
-            state, and optimizing performance across devices. What drives me is
-            turning ideas into polished user interfaces, and I&apos;m always
-            exploring new libraries and workflows to improve both development
-            speed and user satisfaction. I&apos;m eager to collaborate with
-            teams that value clean code, thoughtful design, and continuous
-            growth.
+            I&apos;m a self-taught front-end developer currently living in
+            Uk,Bolton and pursuing a Master&apos;s degree in Software
+            Engineering, with a strong focus on building interactive and
+            scalable web applications. My coding journey began three years ago
+            with Java, and over time, I transitioned into web technologies like
+            HTML, CSS, and JavaScript—where I discovered my passion for creating
+            intuitive user experiences. These days, I specialize in React and
+            Next.js, using component-based architecture to build modern,
+            responsive interfaces. I work with TypeScript for type-safe
+            development and Redux for robust state management in complex
+            applications. I&apos;ve built projects using React Router with data
+            loading, integrated external APIs for real-time data, and created
+            seamless user flows—from pizza ordering systems to movie discovery
+            apps. I leverage tools like Tailwind CSS and CSS Modules for
+            styling, and I&apos;m comfortable managing both remote and UI state
+            effectively. What drives me is turning ideas into polished,
+            responsive user interfaces that work flawlessly across all devices.
+            I&apos;m constantly exploring new technologies and best practices to
+            improve both development efficiency and user satisfaction. I&apos;m
+            eager to collaborate with teams that value clean code, thoughtful
+            design, and continuous growth.
           </p>
         </div>
       </div>
