@@ -20,12 +20,7 @@ export default function Skills() {
                 </h5>
                 <p>Amirreza Tavassoli</p>
               </li>
-              <li className="list-group-item mb-3">
-                <h5 className="text-transform">
-                  <i className="fas fa-calendar text-primary"></i> Birth Date:
-                </h5>
-                <p>August 10, 1997</p>
-              </li>
+
               <li className="list-group-item mb-3">
                 <h5 className="text-transform">
                   <i className="fas fa-building text-primary"></i> Current
