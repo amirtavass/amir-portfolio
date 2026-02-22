@@ -5,7 +5,7 @@ export const projectsData = [
     description:
       "My personal portfolio website built with vanilla javascript and css, showcasing my projects and skills as a developer.",
     image: "/images/site-1.png",
-    liveUrl: "https://amirtavassoli.ir",
+    liveUrl: "https://violetwatch.tech",
     githubUrl: "https://github.com/amirtavass/violet-watch-store",
     detailsUrl: "/projects/amirtavassoli",
     technologies: ["Vanilla Javascript", "Vanilla Css", "HTML"],
