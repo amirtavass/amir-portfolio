@@ -35,13 +35,13 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Fast-react-pizza",
+    title: "Pizza Express",
     description:
       "A streamlined pizza ordering app that gets your name, loads pizza data, and leads you to payment - no sign-ups required. Built with React Router for data loading, Redux for UI state management, and remote state handling.",
     image: "/images/site-5.png",
-    liveUrl: "https://fast-react-pizza-aq7w.vercel.app/",
-    githubUrl: "https://github.com/amirtavass/fast-react-pizza",
-    detailsUrl: "/projects/fast-react-pizza",
+    liveUrl: "https://pizza-express-co.vercel.app/",
+    githubUrl: "https://github.com/amirtavass/Pizza-Express-CO.",
+    detailsUrl: "/projects/Pizza-Express-CO",
     technologies: [
       "React.js",
       "Redux.js",
