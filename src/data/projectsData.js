@@ -22,7 +22,7 @@ export const projectsData = [
     description:
       "A professional portfolio website for swimming coaches, showcasing modern design and development skills.",
     image: "/images/site-4.png",
-    liveUrl: "https://parsswim.ir",
+    liveUrl: "https://parsswim.dev",
     githubUrl: "https://github.com/amirtavass/parsswim",
     detailsUrl: "/projects/arman-portfolio",
     technologies: ["React Query", "Next.js", "Tailwind CSS", "Framer Motion"],
@@ -59,13 +59,13 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "MovieMate",
+    title: "The Cube By Propeler",
     description:
-      "A movie discovery app originally built with JavaScript, now being migrated to TypeScript. Search for your favorite movies, add them to your watched list, and customize your collection. Fully responsive design for all devices.",
+      "A modern property showcase and booking platform demo for The CUBE student accommodation in Bolton. Users can explore luxury room types, view pricing, and seamlessly arrange viewings or book rooms. Features a fully responsive layout highlighting amenities, prime location connectivity, and secure living details.",
     image: "/images/site-2.png",
-    liveUrl: "https://movie-mate-brown.vercel.app/",
-    githubUrl: "https://github.com/amirtavass/MovieMate",
-    detailsUrl: "/projects/moviemate",
+    liveUrl: "https://student-accomodation-demo.vercel.app/",
+    githubUrl: "https://github.com/amirtavass/Student-Accomodation-demo",
+    detailsUrl: "/projects/student-accomodation-demo",
     technologies: ["React.js", "TypeScript", "Css modules", "JavaScript"],
     features: [
       "Responsive Design",
