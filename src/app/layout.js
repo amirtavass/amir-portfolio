@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import Script from "next/script";
+import { LenisProvider } from "@/components/LenisProvider";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -11,39 +11,29 @@ const poppins = Poppins({
 export const metadata = {
   title: "Amirreza Tavassoli | Front End Developer",
   description:
-    "Portfolio of Amirreza Tavassoli - Front End Developer from Shiraz, Iran",
+    "Portfolio of Amirreza Tavassoli — Front End Developer building cinematic digital experiences.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Bootstrap CSS */}
+        {/* Google Fonts — kept for any legacy Bootstrap sections */}
         <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* FontAwesome */}
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          rel="stylesheet"
-        />
-        {/* Google Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
-          rel="stylesheet"
-        />
-        {/* custom CSS */}
-        <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="stylesheet" href="/css/lightbox.min.css" />
       </head>
-      <body className={poppins.variable}>
-        {children}
-        {/* Bootstrap JS */}
-        <Script
-          src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
-          strategy="beforeInteractive"
-        />
+      <body
+        className={`${poppins.variable} bg-[#0d0d0d] text-white antialiased`}
+      >
+        {/*
+          LenisProvider wraps all children.
+          It initialises smooth scroll and respects prefers-reduced-motion.
+          The snap sections inside ProjectShowcase use their own overflow container,
+          so Lenis will not interfere with the snap scroll.
+        */}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );

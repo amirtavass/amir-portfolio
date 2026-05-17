@@ -1,17 +1,11 @@
-import Header from "@/components/Header";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Portfolio from "@/components/portfolio/Portfolio";
-import Contact from "@/components/Contact";
+import { HeroSection } from "@/components/HeroSection";
+import { ProjectShowcase } from "@/components/Projectshowcase";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <About />
-      <Skills />
-      <Portfolio />
-      {/* <Contact /> */}
+      <HeroSection />
+      <ProjectShowcase />
     </>
   );
 }

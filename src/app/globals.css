@@ -1,4 +1,23 @@
-/* Reset and base styles */
+@import "tailwindcss";
+
+/* ── Tailwind v4 Theme Configuration ── */
+@theme {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+
+/* ── Spotlight Keyframe ── */
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
+
+/* ── Reset and base styles ── */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,9 +29,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-}
-
-body {
+  background-color: #0d0d0d; /* Forces the deep dark theme globally */
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,75 +40,44 @@ a {
   text-decoration: none;
 }
 
-/* Your custom portfolio styles */
-header {
-  background: #151515 url(/images/intro-bg.jpg) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
+/* ── Globally hide scrollbar inside snap containers ── */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-header .social {
-  bottom: 50px;
+/* ── Custom scrollbar for modal narrative area ── */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+/* ── Touch tap highlight removal for interactive sections ── */
+section[class*="snap-start"] {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
-header .text-container {
-  z-index: 10;
-}
-
-header .roles {
-  font-family: "Lora", serif;
-}
-
-.about-img {
-  width: 200px;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-in-out;
-  opacity: 0.8;
-}
-.project-card {
-  transition: all 0.3s ease;
-  border: none;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
-}
-
-.project-card:hover .project-overlay {
-  opacity: 1 !important;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.project-card:hover .project-image {
-  transform: scale(1.05);
-}
-
-.project-image-container {
-  overflow: hidden;
-}
-
-@media (max-width: 767px) {
-  header .social {
-    font-size: 10px;
-  }
-  header .roles {
-    font-size: 15px !important;
-  }
-  .about-content {
-    flex-direction: column;
+/* ── Reduced motion: kill all transitions & animations for accessibility ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
