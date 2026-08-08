@@ -9,9 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Amirreza Tavassoli | Front End Developer",
+  title: "Amirreza Tavassoli | Full Stack Developer",
   description:
-    "Portfolio of Amirreza Tavassoli — Front End Developer building cinematic digital experiences.",
+    "Portfolio of Amirreza Tavassoli — Full Stack Developer building cinematic digital experiences.",
 };
 
 export default function RootLayout({ children }) {

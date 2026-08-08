@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaChevronDown } from "react-icons/fa"; // Importing your icons!
+import { FaLinkedin, FaGithub, FaChevronDown } from "react-icons/fa";
 
 export function HeroSection() {
   const [isMounted, setIsMounted] = useState(false);
@@ -113,17 +113,17 @@ export function HeroSection() {
       >
         <motion.div
           variants={itemVariants}
-          className="flex items-center gap-3 mb-8"
+          className="flex items-center gap-5 mb-12 md:mb-20"
         >
-          <div className="w-6 h-px bg-white/40" />
+          <div className="w-6 h-px bg-white/40 " />
           <span className="font-mono text-white/40 text-xs tracking-[0.3em] uppercase">
-            Front End Developer
+            Full Stack Developer
           </span>
         </motion.div>
 
         <motion.h1
           variants={itemVariants}
-          className="text-[clamp(3rem,10vw,7rem)] font-bold text-white tracking-tighter leading-[0.9] mb-6"
+          className="text-[clamp(3rem,10vw,7rem)] font-bold text-white tracking-tighter leading-[0.9] mt-5 mb-6"
         >
           Amirreza
           <br />
@@ -148,7 +148,10 @@ export function HeroSection() {
         </motion.div>
 
         {/* Upgraded "More About Me" CTA Button */}
-        <motion.div variants={itemVariants} className="flex items-center">
+        <motion.div
+          variants={itemVariants}
+          className="flex items-center mt-8 pb-20 md:pb-0"
+        >
           <a
             href="#selected-works"
             className="group flex items-center gap-4 px-6 py-3 border border-white/10 rounded-full text-white text-sm uppercase tracking-[0.2em] hover:bg-white/10 hover:border-white/30 transition-all duration-300"
@@ -162,7 +165,7 @@ export function HeroSection() {
       </motion.div>
 
       {/* Bottom-left: Upgraded Social Icons */}
-      <div className="absolute bottom-10 left-6 md:left-20 z-10 flex gap-6">
+      <div className="absolute bottom-8 left-6 md:bottom-2 md:left-20 z-10 flex gap-6">
         <a
           href="https://www.linkedin.com/in/amir-tavassoli-8b3163218/"
           target="_blank"
