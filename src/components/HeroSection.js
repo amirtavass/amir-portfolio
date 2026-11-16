@@ -153,7 +153,7 @@ export function HeroSection() {
           className="flex items-center mt-8 pb-20 md:pb-0"
         >
           <a
-            href="#selected-works"
+            href="#about"
             className="group flex items-center gap-4 px-6 py-3 border border-white/10 rounded-full text-white text-sm uppercase tracking-[0.2em] hover:bg-white/10 hover:border-white/30 transition-all duration-300"
           >
             <div className="flex items-center justify-center bg-white/10 rounded-full p-2 group-hover:bg-white/20 transition-colors">
